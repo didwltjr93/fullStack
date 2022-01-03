@@ -1,6 +1,6 @@
-package gwaje_file;
+package helloWorld.src.gwaje_file.Nation;
 
-public class Nation_Jinhan_chile extends Nation_Jin_parent {
+public class Nation_Jinhan_child extends Nation_Jin_parent {
     
     private String naraName;
     public int naraArea;
@@ -12,35 +12,40 @@ public class Nation_Jinhan_chile extends Nation_Jin_parent {
     @Override
     public String toString(){
 
+        this.setnaraName("");
+        this.setnaraArea();
+        this.setnaraIngu();
+        
         return  "행성이름 : "  + Nation_Jin_parent.planet +"\n" 
-                +"나라이름 : " + this.setnaraName() + "국\n" 
-                +"나라면적 : " + this.setnaraArea() + "km²\n" 
-                +"나라인구 : " + this.setnaraIngu() + "명\n" 
+                +"나라이름 : " + this.getnaraName() + "국\n"
+                +"나라면적 : " + this.getnaraArea() + "km²\n"
+                +"나라인구 : " + this.getnaraIngu() + "명\n"
                 ;
+
     }
 
-    String setnaraName(){
-        return naraName = "진한";
+    void setnaraName(String naraName){
+        this.naraName = "진한";
     }
 
-    void getnaraName(){
-        String naraName;
+    String getnaraName(){
+        return naraName;
     }
 
-    int setnaraArea(){
-        return naraArea = 33600;
+    void setnaraArea(){
+        this.naraArea = 33600;
     }
 
-    void getnaraArea(){
-        int naraArea;
+    int getnaraArea(){
+        return naraArea;
     }
 
-    int setnaraIngu(){
-        return naraIngu = 750000;
+    void setnaraIngu(){
+        this.naraIngu = 750000;
     }
 
-    void getnaraIngu(){
-        int naraIngu;
+    int getnaraIngu(){
+        return naraIngu;
     }
 
     void conquest() {

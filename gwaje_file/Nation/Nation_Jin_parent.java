@@ -1,4 +1,4 @@
-package gwaje_file;
+package helloWorld.src.gwaje_file.Nation;
 
 public class Nation_Jin_parent {
 
@@ -10,23 +10,18 @@ public class Nation_Jin_parent {
     String setnaraName(){
         return naraName = "진국";
     }
-
     void getnaraName() {
         String naraName;
     }
-
     int setnaraArea() {
         return naraArea;
     }
-
     void getnaraArea() {
         int naraArea = 112000;
     }
-
     int setnaraIngu() {
         return naraIngu;
     }
-
     void getnaraIngu() {
         int naraIngu = 2500000;
     }*/
